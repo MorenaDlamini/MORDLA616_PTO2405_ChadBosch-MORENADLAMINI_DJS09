@@ -1,0 +1,71 @@
+/* Navigation bar styling */
+.nav-bar {
+    width: 100%;
+    position: sticky;              /* Stays at top when scrolling */
+    top: 0;
+    z-index: 100;                  /* Ensures navbar appears above other content */
+    background-color: white;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+  
+  /* Logo styling using background image approach */
+  .logo {
+    height: 30px;
+    width: 46px;
+    background-size: 47px;
+    background-image: url('/images/sofa-logo.png');
+    margin: var(--spacing-sm) 0;
+  }
+  
+  /* User information container in the navbar */
+  .user-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Highlighted styling for returning users */
+  #returning-user {
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+  
+  #user {
+    font-weight: bold;
+  }
+  
+  /* Search Functionality */
+  .search-container {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  #search-input {
+    flex: 1;                       /* Makes input expand to fill available space */
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-size: 0.9rem;
+  }
+  
+  #search-button {
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  #search-button:hover {
+    background-color: var(--primary-hover);
+  }
