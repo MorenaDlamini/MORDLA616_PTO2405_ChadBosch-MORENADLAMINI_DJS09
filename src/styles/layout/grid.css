@@ -1,0 +1,32 @@
+/* Properties grid layout */
+.properties-wrapper {
+    width: 100%;
+  }
+  
+  .properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+    width: 100%;
+  }
+  
+  /* Reviews grid layout */
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  /* Empty state styling */
+  .no-results {
+    width: 100%;
+    padding: var(--spacing-xl);
+    text-align: center;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    color: var(--light-text);
+  }
