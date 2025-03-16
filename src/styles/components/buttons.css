@@ -1,0 +1,93 @@
+/* Button styling */
+.book-button {
+    margin-top: var(--spacing-md);
+    padding: 12px;
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .book-button:hover {
+    background-color: rgb(218,165,32);  /* Gold color on hover */
+  }
+  
+  /* Filter action buttons container */
+  .button-container {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-left: auto;             /* Pushes button container to the right */
+  }
+  
+  /* Shared button styles for filter and reset buttons */
+  .filter-button, .reset-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color var(--transition-speed);
+    height: 38px;
+    width: auto;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .filter-button {
+    background-color: var(--primary-color);
+    color: white;
+    min-width: 110px;
+  }
+  
+  .filter-button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .reset-button {
+    background-color: #eee;
+    color: var(--text-color);
+    min-width: 80px;
+  }
+  
+  .reset-button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Pagination Controls */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .pagination-button {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+    height: 38px;
+  }
+  
+  .pagination-button:hover:not([disabled]) {
+    background-color: var(--primary-hover);
+  }
+  
+  /* Disabled state for pagination buttons */
+  .pagination-button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;           /* Changes cursor to indicate button is disabled */
+  }
+  
+  .page-indicator {
+    font-weight: bold;
+  }
