@@ -1,0 +1,69 @@
+/* Responsive design media queries */
+
+/* Large tablets and smaller desktops */
+@media (max-width: 992px) {
+    .card {
+      width: calc(33.333% - var(--spacing-md));  /* 3 cards per row */
+    }
+    
+    .modal-content-wrapper {
+      grid-template-columns: 1fr;         /* Single column layout for modal */
+    }
+  }
+  
+  /* Tablets and large mobile devices */
+  @media (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;             /* Stack navbar items vertically */
+      padding: var(--spacing-md);
+      gap: var(--spacing-md);
+    }
+    
+    .search-container {
+      width: 100%;
+      max-width: none;
+    }
+    
+    .card {
+      width: calc(50% - var(--spacing-md));  /* 2 cards per row */
+    }
+    
+    .filter-container {
+      gap: var(--spacing-md);
+    }
+    
+    .filter-group, .button-container {
+      width: 100%;                        /* Full width filters on small screens */
+    }
+    
+    .button-container {
+      margin-left: 0;                     /* Reset margin for mobile */
+      justify-content: space-between;
+    }
+    
+    .filter-button, .reset-button {
+      flex: 1;                            /* Equal width buttons */
+    }
+  }
+  
+  /* Small mobile devices */
+  @media (max-width: 576px) {
+    .card {
+      width: 100%;                        /* 1 card per row */
+    }
+    
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
+    }
+    
+    .review-card {
+      min-width: 100%;                    /* Full width reviews */
+    }
+    
+    .footer-links {
+      flex-direction: column;             /* Stack footer links */
+      gap: var(--spacing-md);
+    }
+  }
