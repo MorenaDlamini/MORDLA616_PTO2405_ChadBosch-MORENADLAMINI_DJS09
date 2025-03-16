@@ -1,0 +1,23 @@
+/* Base reset and default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    display: flex;                 /* Sets up a flex container for full-height layout */
+    flex-direction: column;        /* Stacks children vertically */
+    min-height: 100vh;             /* Ensures the body takes at least the full viewport height */
+  }
+  
+  /* Apply border-box sizing to all elements for more predictable layouts */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Ensure responsive images that maintain aspect ratio */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
