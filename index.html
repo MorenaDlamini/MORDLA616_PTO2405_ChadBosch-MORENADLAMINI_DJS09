@@ -1,23 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="./src/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Property rental application">
+    <title>Property Rental Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
-    <div class="nav-bar">
+    <!-- Navigation bar with enhanced structure -->
+    <nav class="nav-bar">
       <div class="logo"></div>
-      <h3 class="user-container">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search properties...">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="user-container">
         Welcome
         <span id="returning-user"></span>
         <span id="user"></span>
-      </h3>
+      </div>
+    </nav>
+
+    <!-- Main content container -->
+    <main class="container">
+      <!-- Hero section with featured property -->
+      <section class="hero-section">
+        <div class="main-image"></div>
+        <div class="main-property-info">
+          <h2 id="main-property-title"></h2>
+          <p id="main-property-description">Featured property of the week</p>
+        </div>
+      </section>
+
+      <!-- Reviews section -->
+      <section class="review-section">
+        <header class="section-header">
+          <h5 id="reviews"></h5>
+          <button id="review-button">Get reviews</button>
+        </header>
+        <div class="reviews"></div>
+        <div class="break"></div>
+      </section>
+
+      <!-- Properties section with filter and sorting options -->
+      <section class="properties-section">
+        <header class="section-header">
+          <h3>Other Properties recommended to you:</h3>
+          <div id="filter-container" class="filter-container">
+            <!-- Filter controls will be added dynamically -->
+          </div>
+        </header>
+        <div class="properties-wrapper">
+          <div class="properties"></div>
+          <div id="pagination" class="pagination">
+            <!-- Pagination controls will be added dynamically -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with enhanced information -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-location"></div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">About Us</a>
+          <a href="#" class="footer-link">Contact</a>
+          <a href="#" class="footer-link">Terms & Conditions</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="copyright">© 2025 Property Rental App. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Modals (hidden by default) -->
+    <div id="property-modal" class="modal-container">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-property-title"></h2>
+          <span class="close-button">&times;</span>
+        </div>
+        <div class="modal-body"></div>
+      </div>
     </div>
-    <div class="container">
-      <h5 id="reviews"></h5>
-    </div>
+
+    <!-- Scripts -->
     <script type="module" src="./src/index.ts"></script>
   </body>
 </html>
