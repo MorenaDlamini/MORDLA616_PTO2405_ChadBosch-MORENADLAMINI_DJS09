@@ -1,0 +1,41 @@
+/* Typography styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+  }
+  
+  a:hover {
+    color: var(--primary-hover);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  
+  /* Star rating display system */
+  .stars-display {
+    margin-top: var(--spacing-xs);
+  }
+  
+  .star {
+    font-size: 1.1rem;
+  }
+  
+  .filled {
+    color: var(--accent-color);
+  }
+  
+  .empty {
+    color: #dddddd;
+  }
+  
+  /* Horizontal separator line */
+  .break {
+    height: 1px;
+    width: 90%;
+    background-color: #ddd;
+    margin: var(--spacing-lg) 0;
+  }
