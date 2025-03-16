@@ -1,0 +1,24 @@
+/* Base variables and design tokens */
+:root {
+    --primary-color: #4A90E2;      /* Main brand color for buttons, links, and highlights */
+    --primary-hover: #357ABD;      /* Darker shade for hover states of primary elements */
+    --secondary-color: #50E3C2;    /* Complementary color for secondary UI elements */
+    --accent-color: #F5A623;       /* Accent color for call-to-action elements and badges */
+    --accent-hover: #E09612;       /* Darker shade for hover states of accent elements */
+    --success-color: #7ED321;      /* Used for success messages and available indicators */
+    --danger-color: #D0021B;       /* Used for error messages and unavailable indicators */
+    --text-color: #4A4A4A;         /* Primary text color for body content */
+    --light-text: #9B9B9B;         /* Secondary text color for less important content */
+    --background-color: #F8F8F8;   /* Background color for the entire application */
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Standard shadow for card elements */
+    --transition-speed: 0.3s;      /* Standard transition duration for animations */
+    --border-radius: 8px;          /* Standard border radius for UI elements */
+    --container-width: 1200px;     /* Maximum width for content containers */
+    
+    /* Standardized spacing variables for consistent layout */
+    --spacing-xs: 5px;             /* Extra small spacing */
+    --spacing-sm: 10px;            /* Small spacing */
+    --spacing-md: 15px;            /* Medium spacing */
+    --spacing-lg: 20px;            /* Large spacing */
+    --spacing-xl: 30px;            /* Extra large spacing */
+  }
