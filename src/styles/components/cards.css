@@ -1,0 +1,152 @@
+/* Property card styling */
+.card {
+    width: calc(25% - var(--spacing-md));  /* 4 cards per row with gap spacing */
+    min-width: 220px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);   /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+    cursor: pointer;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;             /* Maintains aspect ratio while filling container */
+  }
+  
+  /* Price tag overlay on property images */
+  .price-display {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 0 var(--border-radius) 0 0;
+    z-index: 1;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;       /* Truncates text with ellipsis if too long */
+  }
+  
+  .location-snippet {
+    padding: var(--spacing-sm);
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-top: 5px;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  /* Availability indicator badge */
+  .availability-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .available {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  .unavailable {
+    background-color: var(--danger-color);
+    color: white;
+  }
+  
+  /* Review card styling */
+  .review-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  
+  .review-card:hover {
+    transform: translateY(-3px);   /* Slight lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+  }
+  
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .reviewer-name {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+  }
+  
+  /* Loyalty badge for premium/returning reviewers */
+  .loyalty-badge {
+    display: inline-block;
+    padding: 0 var(--spacing-xs);
+    border-radius: 50%;
+    font-size: 0.7rem;
+  }
+  
+  .gold {
+    color: var(--accent-color);
+  }
+  
+  .review-date {
+    font-size: 0.8rem;
+    color: var(--light-text);
+  }
+  
+  /* Loading States */
+  .skeleton-card {
+    animation: pulse 1.5s infinite;  /* Pulsing animation for loading state */
+  }
+  
+  .skeleton-image {
+    height: 150px;
+    background-color: #e0e0e0;
+    width: 100%;
+  }
+  
+  .skeleton-title {
+    height: 20px;
+    margin: var(--spacing-sm);
+    background-color: #e0e0e0;
+    width: 80%;
+    border-radius: 4px;
+  }
+  
+  .skeleton-price {
+    height: 20px;
+    margin: var(--spacing-sm);
+    background-color: #e0e0e0;
+    width: 40%;
+    border-radius: 4px;
+  }
